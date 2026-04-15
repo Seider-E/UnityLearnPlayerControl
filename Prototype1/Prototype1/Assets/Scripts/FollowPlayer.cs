@@ -5,6 +5,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 {
     public GameObject player;
     private Vector3 offset = new Vector3(0, 7, -3);
+   
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,8 +14,13 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     // Update is called once per frame
     void LateUpdate()
+
     {
+        
         //offsetting the camera to behind the player by adding to the players position
-        transform.position = player.transform.position + offset; 
+        transform.position = player.transform.position + offset;
+     
+      
+  
     }
 }
